@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Verilog
+vprio_enc1_4to2
+!s110 1741445558
+!i10b 1
+!s100 z?4JmcJ4e^a0E3F46=oV12
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?DAnAg8Z0bJV4?z[Z<DWE2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Verilog Projects/Priority Encoder
+w1741445380
+8D:/Verilog Projects/Priority Encoder/prio_enc1_4to2.v
+FD:/Verilog Projects/Priority Encoder/prio_enc1_4to2.v
+!i122 0
+L0 2 27
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1741445558.000000
+!s107 D:/Verilog Projects/Priority Encoder/prio_enc1_4to2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog Projects/Priority Encoder/prio_enc1_4to2.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vprio_enc2_4to2
+Z7 !s110 1741445559
+!i10b 1
+!s100 dTRD3VDiQaOSEGH?KS1]U2
+R0
+Im7m66DjH1Z5Z8URH4?QZF0
+R1
+R2
+w1741445416
+8D:/Verilog Projects/Priority Encoder/prio_enc2_4to2.v
+FD:/Verilog Projects/Priority Encoder/prio_enc2_4to2.v
+!i122 2
+L0 1 17
+R3
+r1
+!s85 0
+31
+Z8 !s108 1741445559.000000
+!s107 D:/Verilog Projects/Priority Encoder/prio_enc2_4to2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog Projects/Priority Encoder/prio_enc2_4to2.v|
+!i113 1
+R5
+R6
+vtb_prio_enc1_4to2
+R7
+!i10b 1
+!s100 5JfPAWiKjj8M4h@z>OGaV2
+R0
+I^KJ]KzmofoGF=ii>OF<_D1
+R1
+R2
+w1741445376
+8D:/Verilog Projects/Priority Encoder/prio_enc1_4to2_tb.v
+FD:/Verilog Projects/Priority Encoder/prio_enc1_4to2_tb.v
+!i122 1
+L0 2 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog Projects/Priority Encoder/prio_enc1_4to2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog Projects/Priority Encoder/prio_enc1_4to2_tb.v|
+!i113 1
+R5
+R6
+vtb_prio_enc2_4to2
+R7
+!i10b 1
+!s100 X1aUfmI:Oh:BD`ODU8_QK1
+R0
+I1[hF4nU`^fjFT[67^JiiE1
+R1
+R2
+w1741445463
+8D:/Verilog Projects/Priority Encoder/prio_enc2_4to2_tb.v
+FD:/Verilog Projects/Priority Encoder/prio_enc2_4to2_tb.v
+!i122 3
+L0 2 29
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Verilog Projects/Priority Encoder/prio_enc2_4to2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Verilog Projects/Priority Encoder/prio_enc2_4to2_tb.v|
+!i113 1
+R5
+R6
