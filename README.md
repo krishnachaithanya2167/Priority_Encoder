@@ -16,10 +16,17 @@ A **Priority Encoder** is a combinational circuit that converts multiple binary 
 
 ## 📂 Repository Structure
 📦 Priority_Encoder
- ┣ 📜 prio_enc1_4to2.v           # First implementation of the 4-to-2 priority encoder
- ┣ 📜 prio_enc1_4to2_tb.v        # Testbench for the first implementation
- ┣ 📜 prio_enc2_4to2.v           # Second implementation of the 4-to-2 priority encoder
- ┣ 📜 prio_enc2_4to2_tb.v        # Testbench for the
+ ┣ 📂 src
+ ┃ ┣ 📜 prio_enc1_4to2.v         # First implementation of the 4-to-2 priority encoder
+ ┃ ┣ 📜 prio_enc2_4to2.v         # Second implementation of the 4-to-2 priority encoder
+ ┣ 📂 testbench
+ ┃ ┣ 📜 prio_enc1_4to2_tb.v      # Testbench for the first implementation
+ ┃ ┣ 📜 prio_enc2_4to2_tb.v      # Testbench for the second implementation
+ ┣ 📂 simulation
+ ┃ ┣ 📜 Waveform_TB1.png         # Simulation waveform for the first testbench
+ ┃ ┣ 📜 Waveform_TB2.png         # Simulation waveform for the second testbench
+ ┣ 📜 README.md                  # Project documentation (this file)
+ ┣ 📜 .gitignore                  # Git ignore file for unnecessary files
 
 ## 🖥️ How to Run Simulations
 
