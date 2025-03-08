@@ -1,20 +1,16 @@
 # Priority Encoder
 
-## 📌 Overview
-A **Priority Encoder** is a combinational circuit that converts multiple binary inputs into a binary representation of the index of the most significant active input. This project provides two implementations of a 4-to-2 priority encoder in Verilog, each with its corresponding testbench.
+## Overview
+This project implements a **4-to-2 Priority Encoder** using Verilog. The priority encoder takes a 4-bit input and encodes it into a 2-bit output based on the highest-priority active input. Two different implementations are provided, along with corresponding testbenches and simulation results.
 
-## 🛠 Features
-- **Two 4-to-2 Priority Encoder Implementations:**
-  - `prio_enc1_4to2.v`: Basic implementation.
-  - `prio_enc2_4to2.v`: Alternative implementation with different logic.
-- **Testbenches for Each Implementation:**
-  - `prio_enc1_4to2_tb.v`: Testbench for `prio_enc1_4to2.v`.
-  - `prio_enc2_4to2_tb.v`: Testbench for `prio_enc2_4to2.v`.
-- **Simulation Waveforms:**
-  - `Waveform for TB 1.png`: Output waveform for `prio_enc1_4to2_tb.v`.
-  - `Waveform for TB 2.png`: Output waveform for `prio_enc2_4to2_tb.v`.
+## Features
+- Implements a 4-to-2 priority encoder in two different ways
+- Testbenches provided for both implementations
+- Waveform results included for verification
 
-## 📂 Repository Structure
+## Repository Structure
+
+```
 📦 Priority_Encoder
  ┣ 📂 src
  ┃ ┣ 📜 prio_enc1_4to2.v         # First implementation of the 4-to-2 priority encoder
@@ -27,65 +23,33 @@ A **Priority Encoder** is a combinational circuit that converts multiple binary 
  ┃ ┣ 📜 Waveform_TB2.png         # Simulation waveform for the second testbench
  ┣ 📜 README.md                  # Project documentation (this file)
  ┣ 📜 .gitignore                  # Git ignore file for unnecessary files
+```
 
-## 🖥️ How to Run Simulations
+## How It Works
+A **Priority Encoder** assigns a binary code to the highest-priority active input. In a 4-to-2 priority encoder:
+- If input `D3` is high, output is `11`
+- Else if `D2` is high, output is `10`
+- Else if `D1` is high, output is `01`
+- Else if `D0` is high, output is `00`
 
-### **🔹 Using ModelSim**
-1. **Open ModelSim:**
-   - Launch ModelSim on your system.
-   - Open the project file `Priority Encoder.mpf`.
+## How to Run the Simulation
+1. Ensure you have **ModelSim** or any Verilog simulator installed.
+2. Open ModelSim and navigate to the project folder.
+3. Compile the Verilog files (`prio_enc1_4to2.v` and `prio_enc2_4to2.v`).
+4. Run the testbench files (`prio_enc1_4to2_tb.v` and `prio_enc2_4to2_tb.v`).
+5. View the simulation waveforms to verify the functionality.
 
-2. **Compile the Verilog Files:**
-   - In the ModelSim interface, compile the desired Verilog files:
-     - For `prio_enc1_4to2.v` and its testbench:
-       ```
-       vlog prio_enc1_4to2.v prio_enc1_4to2_tb.v
-       ```
-     - For `prio_enc2_4to2.v` and its testbench:
-       ```
-       vlog prio_enc2_4to2.v prio_enc2_4to2_tb.v
-       ```
+## Simulation Results
+The simulation outputs are stored in the `simulation/` folder as waveform images:
+- **Waveform_TB1.png** → First implementation test results
+- **Waveform_TB2.png** → Second implementation test results
 
-3. **Run the Simulation:**
-   - For the first encoder:
-     ```
-     vsim prio_enc1_4to2_tb
-     ```
-   - For the second encoder:
-     ```
-     vsim prio_enc2_4to2_tb
-     ```
+## Future Improvements
+- Extend the design to an 8-to-3 priority encoder.
+- Implement the encoder using behavioral Verilog.
+- Add support for enable and valid signal outputs.
 
-4. **View the Waveforms:**
-   - Add the relevant signals to the waveform viewer.
-   - Run the simulation to observe the output.
-   - Reference waveforms are provided in `Waveform for TB 1.png` and `Waveform for TB 2.png`.
-
-## 📝 Verilog Code Explanation
-
-### **prio_enc1_4to2.v**
-- **Inputs:**
-  - `i0, i1, i2, i3`: Four input signals.
-- **Outputs:**
-  - `y1, y0`: Two-bit binary representation of the highest-priority active input.
-  - `valid`: Indicates if any input is active.
-
-**Logic:**
-- The encoder checks inputs from highest (`i3`) to lowest (`i0`) priority.
-- Outputs the binary code corresponding to the highest active input.
-- Sets `valid` high if any input is active.
-
-### **prio_enc2_4to2.v**
-- Similar functionality to `prio_enc1_4to2.v` but with different internal logic or optimization.
-
-## 🚀 Future Enhancements
-- Implement **8-to-3** and **16-to-4** priority encoders.
-- Develop a parameterized priority encoder for scalable designs.
-- Integrate the encoder with larger digital systems or FPGA implementations.
-
-## 📜 License
-This project is open-source under the **MIT License**.
+## License
+This project is open-source. Feel free to use and modify it.
 
 ---
-
-Feel free to contribute by submitting issues or pull requests. 😊
